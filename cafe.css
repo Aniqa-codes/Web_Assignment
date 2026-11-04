@@ -1,0 +1,213 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #3e2723;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: #795548;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+/* Main Sections */
+section {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #6d4c41;
+}
+
+/* Image */
+img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #efebe9;
+    padding: 25px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #8d6e63;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #795548;
+    color: white;
+}
+
+/* Form */
+form {
+    background-color: #efebe9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+input:not([type="checkbox"]):not([type="radio"]),
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #6d4c41;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e2723;
+}
+
+/* Footer */
+footer {
+    background-color: #5d4037;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+/* Dark Mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode section {
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px 0;
+    resize: vertical;
+}
+
+/* Feedback Messages */
+#success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#discount-message {
+    color: blue;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Character Counter */
+#char-count {
+    font-size: 14px;
+    color: gray;
+}
+
+/* Opening Status */
+#opening-status {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Menu Filter */
+.filter-btn {
+    background-color: #795548;
+    color: white;
+}
+
+.filter-btn:hover {
+    background-color: #3e2723;
+}
